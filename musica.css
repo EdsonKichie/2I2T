@@ -7,8 +7,8 @@ body{
 }
 .menu{
     width: 100%;
-    height: 150px;
-    background-color: rgb(107, 107, 196);
+    height: 60px;
+    background-color: rgb(138, 138, 236);
 }
 .conteudo-musica{
     width: 100%;
@@ -20,24 +20,44 @@ body{
 }
 .desc-estilo{
     width: 100%;
-    background-color: tan;
+    background-color: rgb(228, 164, 80);
 }
 .desc-solo{
     width: 100%;
-    background-color: rgb(219, 171, 109);
+    background-color: rgb(240, 203, 155);
 }
 .desc-grupo{
     width: 100%;
-    background-color: tan;
+    background-color: rgb(228, 164, 80);
 }
 .desc-banda{
     width: 100%;
-    background-color: rgb(219, 171, 109);
+    background-color: rgb(240, 203, 155);
 }
 .desc-app{
     width: 100%;
-    background-color: tan;
+    background-color: rgb(228, 164, 80);
 }
 .img-ini{
     width: 100%;
 }
+@media screen and (min-width: 768px) and (max-width: 992px){
+ .menu{
+    height: 150px;
+    background-color: rgb(94, 94, 238);
+ }
+ .conteudo-musica{
+    display: flex;
+    direction: ltr;
+ }
+}
+@media screen and (min-width: 993px) and (max-width: 1080px){
+    .menu{
+       height: 200px;
+       background-color: rgb(37, 37, 241);
+    }
+    .conteudo-musica{
+       display: flex;
+       direction: rtl;
+    }
+   }
