@@ -41,23 +41,29 @@ body{
 .img-ini{
     width: 100%;
 }
-@media screen and (min-width: 768px) and (max-width: 992px){
+
+@media screen and (min-width: 768px){
  .menu{
-    height: 150px;
+    height: 120px;
     background-color: rgb(94, 94, 238);
+    font-size: 32px;
+    color: white;
  }
- .conteudo-musica{
+ .desc-solo{
     display: flex;
-    direction: ltr;
  }
 }
-@media screen and (min-width: 993px) and (max-width: 1080px){
+
+@media screen and (min-width: 1280px){
     .menu{
        height: 200px;
        background-color: rgb(37, 37, 241);
+       font-size: 64px;
     }
-    .conteudo-musica{
-       display: flex;
-       direction: rtl;
+    .img-ini{
+        width: 50%;
+    }
+    .desc-solo{
+        display: flex;
     }
    }
