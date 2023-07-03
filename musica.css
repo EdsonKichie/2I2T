@@ -16,6 +16,7 @@ ul {
     background-color: rgb(153, 153, 232);
     position: sticky;
     top: 0;
+    font-size: 48px;
 }
 .logo {
     display: inline-block;
@@ -90,37 +91,25 @@ ul {
     top: 0;
 }
 .conteudo-musica{
-    width: 100%;
+    width: 100vw;
 }
 .rodape{
     width: 100%;
     background-color: rgb(102, 188, 209);
     text-align: center;
 }
-.desc-estilo{
-    width: 100%;
-    background-color: rgb(228, 164, 80);
+.definicao{
+    display: flex;
+    width: 100vw;
+    grid-area: def;
 }
-.desc-solo{
-    width: 100%;
-    background-color: rgb(240, 203, 155);
+.img-definicao{
+    display: none;
 }
-.desc-grupo{
-    width: 100%;
-    background-color: rgb(228, 164, 80);
+.descricao{
+    width: 100vw;
 }
-.desc-banda{
-    width: 100%;
-    background-color: rgb(240, 203, 155);
-}
-.desc-app{
-    width: 100%;
-    background-color: rgb(228, 164, 80);
-}
-.desc-artistas{
-    width: 100%;
-    background-color: rgb(240, 203, 155);
-}
+div
 
 
 .conceito{
@@ -135,12 +124,13 @@ ul {
 }
 
 
+
 .img-ini{
     width: 100%;
     height: 100%;
 }
 
-@media screen and (min-width: 768px){
+@media screen and (min-width: 600px){
     .nav {
         max-height: none;
         top: 0;
@@ -156,24 +146,59 @@ ul {
         background-color: transparent;
         color: rgb(73, 194, 255);
     }
-    .hamburger {
+    .hamb{
         display: none;
     }
     #logo {
-        width: 20vh;
+        width: 16vh;
+        height: 16vh;
+    }
+    .conteudo-musica{
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-columns: "def def";
+    }
+    .definicao{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .descricao{
+        display: block;
+        width: 80vw;
+    }
+    .img-definicao{
+        display: block;
+        width: 10vw;
     }
 }
 
-@media screen and (min-width: 1280px){
-    .menu{
-       height: 200px;
-       background-color: rgb(87, 87, 241);
-       font-size: 54px;
+@media screen and (min-width: 1228px){
+    .nav {
+        max-height: none;
+        top: 0;
+        position: relative;
+        float: right;
+        width: fit-content;
+        background-color: transparent;
     }
-    .img-ini{
-        width: 50%;
+    .menu li {
+        float: left;
     }
-    .desc-solo{
-        display: flex;
+    .menu a:hover{
+        background-color: transparent;
+        color: rgb(73, 194, 255);
     }
-   }
+    .hamb{
+        display: none;
+    }
+    #logo {
+        width: 16vh;
+        height: 16vh;
+    }
+    .conteudo-musica{
+        display: grid;
+        grid-template-columns: 33.3% 33.4% 33.3%;
+        grid-template-columns: "def def def";
+    }
+}
